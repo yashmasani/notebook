@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Welcome to Tauri!</h1>
-      
+      <span className="container-ball"></span>
+      <h1 className="container-title"><u>Welcome to My Notes!</u></h1>
       <Notes/>
     </div>
   );
