@@ -1,11 +1,11 @@
 .notes {
   border: solid 2px #508ACE;
   background-color: rgba(70, 84, 236, 0.6);
-  color:  black;
+  color:  white;
   width: 75%;
   height: 45%;
   font-size: 15vh;
 }
 .notes::placeholder {
-  color: black;
+  color: white;
 }

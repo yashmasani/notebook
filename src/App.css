@@ -2,9 +2,11 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: rgb(102, 153, 255);
+  background-image: url('./assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-.container-ball {
+.container-ball span {
   content: '';
   background-color: #0000ff;
   border-radius: 50%;
@@ -24,5 +26,5 @@
 }
 
 .container-title {
-  color:  #004d66;
+  color:  black;
 }
