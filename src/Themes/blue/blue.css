@@ -1,0 +1,36 @@
+.container {
+  background-image: url('./assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container-ball span {
+  content: '';
+  background-color: #0000ff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  animation-name: random;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+ }
+
+@keyframes random {
+  from { top: 50%; }
+  to { top: 90%; }
+}
+
+.container .notes {
+  border: solid 2px #508ACE;
+  background-color: rgba(70, 84, 236, 0.6);
+  color:  white;
+  width: 75%;
+  height: 45%;
+  font-size: 15vh;
+}
+.notes::placeholder {
+  color: white;
+}

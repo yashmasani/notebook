@@ -2,7 +2,7 @@ import './blue.css';
 
 function Blue() {
   
-  const SPREAD = 10;
+  const SPREAD = 15;
   
   function colorSpawner(): number {
     return Math.ceil(Math.random() * 255);
@@ -11,7 +11,7 @@ function Blue() {
       <div className="container-ball">
         {
           [...Array(6)].map((_, i) => (
-            <span style={{ backgroundColor: `rgb(${colorSpawner()}, ${colorSpawner()}, ${colorSpawner()})`, left: `${10 + (i*SPREAD)}%`, animationDelay: `${colorSpawner() - (5 * SPREAD)}s` }} key={i} />
+            <span style={{ backgroundColor: `rgb(${colorSpawner()}, ${colorSpawner()}, ${colorSpawner()})`, left: `${10 + (i*SPREAD)}%`, animationDelay: `${((colorSpawner()/255) * 100)}s` }} key={i} />
           ))
         }
       </div>
