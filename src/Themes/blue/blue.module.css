@@ -1,10 +1,10 @@
-.container {
-  background-image: url('./assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg');
+:global .container {
+  background-image: url('../../assets/shifaaz-shamoon-okVXy9tG3KY-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
-.container-ball span {
+.containerBall span {
   content: '';
   background-color: #0000ff;
   border-radius: 50%;
@@ -23,7 +23,7 @@
   to { top: 90%; }
 }
 
-.container .notes {
+:global .container .notes {
   border: solid 2px #508ACE;
   background-color: rgba(70, 84, 236, 0.6);
   color:  white;
@@ -31,6 +31,6 @@
   height: 45%;
   font-size: 15vh;
 }
-.notes::placeholder {
+:global .notes::placeholder {
   color: white;
 }

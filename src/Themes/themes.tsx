@@ -6,7 +6,7 @@ const Night = lazy(() => import('./night/night'));
 function Theme(props: PropsWithChildren) {
   return (
     <div className="container">
-      <Night/>
+      <Blue/>
       { props.children }
     </div>
   );

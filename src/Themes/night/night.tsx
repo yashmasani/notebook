@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import './night.css';
+import nightStyle from './night.module.css';
 
 function Night() {
   
