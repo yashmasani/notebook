@@ -10,14 +10,18 @@ function Night() {
     if (canvas) {
       const ctx = (canvas as HTMLCanvasElement).getContext('2d');
       if (ctx) {
-        ctx.fillStyle = 'red';
-        ctx.fillRect(20,30,40,50);
+        const grad = ctx.createLinearGradient(0, 0, 0, window.innerHeight);
+        grad.addColorStop(0, '#000066');
+        grad.addColorStop(0.5, '#0099ff');
+        grad.addColorStop(1, '#000066');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 1200, window.innerHeight);
       }
     }
   }, []);
-
+  
   return (
-    <div>
+    <div className={nightStyle.containerNight}>
       <canvas ref={nightRef} />
     </div>
   );

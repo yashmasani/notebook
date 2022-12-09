@@ -1,4 +1,7 @@
 .notes {
   width: 75%;
   height: 45%;
+  position: fixed;
+  top: 33%;
+  left: 33%;
 }
